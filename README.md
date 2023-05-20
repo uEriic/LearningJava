@@ -10,7 +10,7 @@
 Nesse repositório você verá toda minha evolução na linguagem,
 juntamente do caminho que eu percorri.
 
-Estão prepados? Let's g then!
+Estão prepados? Let's go then!
 
 1. [Primeiro contato com ambiente Java.](#hello-world)
 
