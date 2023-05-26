@@ -14,6 +14,8 @@ Estão preparados? Let's g then!
 
 1. [Primeiro contato com ambiente Java.](#hello-world)
 2. [Tipos primitivos em Java](#tipos-em-java)
+3. [Operadores Aritmétricos](#operadores-aritimétricos-em-java)
+4. [Classe Math](#classe-javalangmath)
 
 
 ## Hello World!
@@ -132,3 +134,122 @@ public  class TiposPrimitivos3 {
 > Fim da história, se entendeu ok, senão vê no YouTube ou no curso.
  
 Novamente chegamos ao final de uma _"aula"_, nos vemos na próxima guys! 😉
+
+
+## Operadores Aritimétricos em Java
+> O código-fonte deste exercício pode ser encontrado [aqui](src/Operadores.java). ;)
+
+Vamos lá guys, execício simples para nozes finalmente hihihi.
+Se prepare para memorizar uns símbolos e cadeia de símbolos.
+
+Começaremos pelos clássicos operadores aritmétricos,
+está pronto para uma aula de matemática computacional? kksksks
+
+```java
+public class Operadores {
+ public static void main(String[] args) {
+  int n1 = 16;
+  int n2 = 25;
+  int res = n1 + n2;
+
+  System.out.println(res); //Saída: 41
+ }
+}
+```
+Vejamos acima que temos uma continha simples de **soma**,
+e sim é o mesmo sinal de *mais* que estamos acostumados.
+Aqui vai uma breve lista dos demais sinais e suas funções.
+
+| Sinal | Função           | Exemplo | Saída |
+|-------|------------------|---------|-------|
+| +     | Soma             | 7 + 2   | 9     |
+| -     | Subtração        | 7 - 2   | 5     |
+| *     | Multiplicação    | 7 * 2   | 14    |
+| /     | Divisão          | 7 / 2   | 3.5   |
+| %     | Resto da Divisão | 7 % 2   | 1     |
+
+> O sinal % (resto da divisão) faz uma divisão e força aparecer um resultado
+> inteiro, porém o mesmo retorna o valor que sobra disso.
+> Para ficar mais claro imagine 7 dividido para 2 sabemos que vai ficar 3,5, mas
+> fazendo a divisão inteira temos o resultado "3" de 6 dividido para 2
+> e sobra 1 desse cálculo pois não tem como dividir ele.
+
+Espero que tenham entendido, qualquer coisa tente mentalizar ou pesquisar na internet,
+ou abra um issue que eu tentarei te ajudar.
+
+Também temos os operadores `++` e `--` que são, respectivamente, operadores de
+incremento e decremento. Eles servem, respectivamente, para somar 1 na variável
+e subtrair 1 da variável.
+> Vale apena mencionar que eles podem funcionar de duas maneiras, pré-variável e pós-variável.
+> Veja nos exemplos a seguir!
+
+```java
+public  class Operadores {
+ public static void main(String[] args) {
+  int n1 = 2;
+  n1++;
+  System.out.println(n1); //Saída: 2
+  
+  // Vejamos o seguinte:
+  int n2 = 3;
+  int n3 = n1 + n2++;
+  System.out.println(n3); //Saída: 5
+ }
+}
+```
+Você provavelmente deve ter chutado que a saída seria 2 + 4 = 6, mas não
+nós mandamos o java fazer a soma e **depois** incrementar o valor de n2.
+
+Observe:
+```java
+public  class Operadores {
+ public static void main(String[] args) {
+  int n1 = 2;
+  int n2 = 3;
+  int n3 = n1 + ++n2;
+  System.out.println(n3); //Saída: 6
+ }
+}
+```
+Nesse caso mandamos primeiro incrementar o n2 e **depois** fazer a soma.
+Então nesses casos a ordem importa, fiquem atentos guys para não passarem vergonha
+no futuro como devs java! 😜
+
+## Classe java.lang.Math
+> O código-fonte deste exercício pode ser encontrado [aqui](src/ClasseMath.java). ;)
+ 
+Você deve ter se perguntado "*Como eu posso fazer potenciação e raiz usando java?*", e eu estou aqui para lhe ajudar!
+Para isso e ***MUITAS*** outras operações matemáticas e coisas relacionadas
+usaremos a classe do java.lang chama `Math`.
+
+Por ser uma classe do próprio java não é necessário importá-la no seu projeto, veja a seguir alguns exemplos:
+```java
+public class ClasseMath {
+    public static void main(String[] args) {
+        double power = Math.pow(5,3); //Potênciação
+        System.out.println(power);
+
+        int pass = (int) (1111111   + Math.random() * (9999999-1111111)); //Randomização de números "avaçada"
+
+        System.out.println("Sua nova senha é: " + pass);
+
+
+        double nota = 4.1;
+        double notaFinal = Math.round(nota); //Arredondamento inteligente
+
+        System.out.println("A nota final desse aluno ficará = " + notaFinal);
+    }
+}
+
+```
+> O `Math.random()` visto acima representa um número aleatório entre 0 e 1, por exemplo, 0,3.
+> Fazemos esse cálculo para ter um número aleatório com uma "folga" maior. Exemplo:
+> 
+> `(minNum) + Math.random() * (maxNum - minNum)`
+> 
+> Dessa forma fazemos um número aleatório com valores maiores.
+
+Lembrando pessoal que essa classe tem muitos mais métodos e atributos, fiquem avontade para pesuqisar mais.
+Se tiverem no IntelliJ IDEA basta digitar `Math.` e apertar "tab".
+
+Por hoje é só guys, até dps bbs 😘

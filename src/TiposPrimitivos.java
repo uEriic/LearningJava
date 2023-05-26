@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class TiposPrimitivos {
      public static void main(String[] args) {
-         char letter = 'E';
+         /*char letter = 'E';
          byte age = 16;
          float height = 1.75F;
          boolean marred = false;
@@ -10,7 +10,7 @@ public class TiposPrimitivos {
              System.out.println("I'm marred!");
          } else {
              System.out.println("I'm not marred!");
-         }
+         }*/
 
          Scanner keyboard = new Scanner(System.in);
          System.out.print("Digite seu nome aqui: ");
@@ -32,8 +32,8 @@ public class TiposPrimitivos {
          */
 
          // Dessa forma podemos fazer o código anterior funcionar.
-         int idade = 16;
-         String value = Integer.toString(idade); // Usando o método toString() da classe Integer transformamos int em String.
-         System.out.println(value); // Sucesso: 16
+         /*int idade = 16;
+         String value = Integer.toString(idade); // Usando o método toString() da classe Integer transformamos “int” em String.
+         System.out.println(value); // Sucesso: 16*/
      }
 }
