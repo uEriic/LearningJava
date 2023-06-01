@@ -104,7 +104,7 @@ public class TiposPrimitivos2 {
         }
     }
 }
-// i love you javalang 😜
+// i love you java lang 😜
 ```
 Para finalizar com chave de outro o professor fala e prova que dentro dos tipos também existem brigas de clan.
 Para você que gosta de naruto vou fazer uma analogia para ficar mais fácil,
@@ -114,7 +114,7 @@ public  class TiposPrimitivos3 {
     public static void main(String[] args) {
         /* Não funciona, pois o tipo "int" não pode ser atribuído ao tipo "String"!
             int idade = 16; // definindo um inteiro com o valor da minha idade
-            String value = idade; // aqui dizemos que ele é uma string, aparece um erro astronômico kkkk
+            String value = idade; // aqui dizemos que ele é uma string, aparece um erro astronômico okay
          */
 
         // Dessa forma podemos fazer o código anterior funcionar.
@@ -143,7 +143,7 @@ Vamos lá guys, execício simples para nozes finalmente hihihi.
 Se prepare para memorizar uns símbolos e cadeia de símbolos.
 
 Começaremos pelos clássicos operadores aritmétricos,
-está pronto para uma aula de matemática computacional? kksksks
+está pronto para uma aula de matemática computacional? Kksksks
 
 ```java
 public class Operadores {
